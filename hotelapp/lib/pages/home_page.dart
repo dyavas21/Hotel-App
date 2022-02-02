@@ -191,4 +191,15 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+
+  Widget Slider() {
+    return Container(
+      width: 280,
+      height: 350,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        color: Colors.white,
+      ),
+    );
+  }
 }
