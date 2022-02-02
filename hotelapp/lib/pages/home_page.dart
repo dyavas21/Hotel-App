@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hotelapp/widget/recommended_hotel.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -77,6 +78,7 @@ class HomePage extends StatelessWidget {
               Discover(),
               Balance(),
               Recommended(),
+              Slider(),
             ],
           )
         ],
@@ -194,11 +196,37 @@ class HomePage extends StatelessWidget {
 
   Widget Slider() {
     return Container(
-      width: 280,
-      height: 350,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(12),
-        color: Colors.white,
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            Row(
+              children: [
+                RecommendedHotel(
+                  imageUrl: 'assets/recommended1.png',
+                  title: 'Bimosaurus Hotel',
+                  rate: '4,9',
+                  location: 'Safari, Buitenzorg',
+                  price: 'IDR 599,999',
+                ),
+                RecommendedHotel(
+                  imageUrl: 'assets/recommended1.png',
+                  title: 'Bimosaurus Hotel',
+                  rate: '4,9',
+                  location: 'Safari, Buitenzorg',
+                  price: 'IDR 599,999',
+                ),
+                RecommendedHotel(
+                  imageUrl: 'assets/recommended1.png',
+                  title: 'Bimosaurus Hotel',
+                  rate: '4,9',
+                  location: 'Safari, Buitenzorg',
+                  price: 'IDR 599,999',
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
