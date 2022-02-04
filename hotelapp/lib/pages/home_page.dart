@@ -8,11 +8,19 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffFBFBFB),
       bottomNavigationBar: BottomNavigationBar(
+        unselectedLabelStyle: GoogleFonts.poppins(),
+        selectedLabelStyle: GoogleFonts.poppins(),
+        currentIndex: 0,
         showSelectedLabels: true,
         showUnselectedLabels: true,
         selectedItemColor: Color(0xff4E82EA),
         unselectedItemColor: Color(0xffD8D8D8),
         backgroundColor: Color(0xfFFFFF),
+        onTap: (value) {
+          if (value == 1) {
+            Navigator.pushNamed(context, '/search');
+          }
+        },
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(
