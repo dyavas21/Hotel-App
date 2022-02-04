@@ -80,6 +80,7 @@ class HomePage extends StatelessWidget {
               Recommended(),
               Slider(),
               NewHotel(),
+              NewHotelCard(),
             ],
           )
         ],
@@ -271,6 +272,61 @@ class HomePage extends StatelessWidget {
         left: 24,
         right: 24,
         top: 12,
+      ),
+      padding: EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        color: Colors.white,
+      ),
+      child: Row(
+        children: [
+          Image.asset(
+            'assets/new_hotel.png',
+            width: 70,
+          ),
+          SizedBox(
+            width: 12,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Skytown Hotel',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xff2A2B3D),
+                ),
+              ),
+              SizedBox(
+                height: 4,
+              ),
+              Text(
+                'Sibolga, Medan',
+                style: GoogleFonts.poppins(
+                  color: Color(0xffB7B7B7),
+                  fontSize: 12,
+                ),
+              ),
+            ],
+          ),
+          Spacer(),
+          Text(
+            '4,9',
+            style: GoogleFonts.poppins(
+              color: Color(0xffB7B7B7),
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          SizedBox(
+            width: 2,
+          ),
+          Image.asset(
+            'assets/star.png',
+            width: 18,
+          ),
+        ],
       ),
     );
   }
