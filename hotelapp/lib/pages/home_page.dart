@@ -79,6 +79,7 @@ class HomePage extends StatelessWidget {
               Balance(),
               Recommended(),
               Slider(),
+              NewHotel(),
             ],
           )
         ],
@@ -227,6 +228,49 @@ class HomePage extends StatelessWidget {
             )
           ],
         ),
+      ),
+    );
+  }
+
+  Widget NewHotel() {
+    return Container(
+      margin: EdgeInsets.only(
+        top: 24,
+        left: 24,
+        right: 24,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            'New Hotels Experience',
+            style: GoogleFonts.poppins(
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+              color: Color(0xff2A2B3D),
+            ),
+          ),
+          Text(
+            'View all',
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+              color: Color(0xff4E82EA),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget NewHotelCard() {
+    return Container(
+      width: double.infinity,
+      height: 94,
+      margin: EdgeInsets.only(
+        left: 24,
+        right: 24,
+        top: 12,
       ),
     );
   }
