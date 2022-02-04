@@ -59,6 +59,7 @@ class SearchPage extends StatelessWidget {
               title(),
               searchBar(),
               lastestSearch(),
+              nearby(),
             ],
           ),
         ],
@@ -268,6 +269,207 @@ class SearchPage extends StatelessWidget {
               ),
             ],
           )
+        ],
+      ),
+    );
+  }
+
+  Widget nearby() {
+    return Container(
+      margin: EdgeInsets.only(
+        left: 24,
+        top: 24,
+        right: 24,
+      ),
+      child: Column(
+        children: [
+          Text(
+            'Nearby You',
+            style: GoogleFonts.poppins(
+              color: Color(0xff2A2B3D),
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          Container(
+            padding: EdgeInsets.all(12),
+            height: 94,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.white,
+            ),
+            child: Row(
+              children: [
+                Image.asset(
+                  'assets/nearby1.png',
+                  width: 70,
+                ),
+                SizedBox(
+                  width: 12,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'GH Setiabuddy',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff2A2B3D),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      'Setiabuddy, Bandung',
+                      style: GoogleFonts.poppins(
+                        color: Color(0xffB7B7B7),
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Text(
+                  '0,1km',
+                  style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xffF2735B),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          Container(
+            padding: EdgeInsets.all(12),
+            height: 94,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.white,
+            ),
+            child: Row(
+              children: [
+                Image.asset(
+                  'assets/nearby2.png',
+                  width: 70,
+                ),
+                SizedBox(
+                  width: 12,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Damsaurus Hotel',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff2A2B3D),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      'Pasteur, Bandung',
+                      style: GoogleFonts.poppins(
+                        color: Color(0xffB7B7B7),
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Text(
+                  '0,1km',
+                  style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xffF2735B),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          Container(
+            padding: EdgeInsets.all(12),
+            height: 94,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.white,
+            ),
+            child: Row(
+              children: [
+                Image.asset(
+                  'assets/nearby3.png',
+                  width: 70,
+                ),
+                SizedBox(
+                  width: 12,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Andjoy Hotel',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xff2A2B3D),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      'Kebon Jaty, Bandung',
+                      style: GoogleFonts.poppins(
+                        color: Color(0xffB7B7B7),
+                        fontSize: 12,
+                      ),
+                    ),
+                  ],
+                ),
+                Spacer(),
+                Text(
+                  '0,1km',
+                  style: GoogleFonts.poppins(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xffF2735B),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 24,
+          ),
+          Text(
+            'Load More',
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              fontWeight: FontWeight.w500,
+              color: Color(0xff4E82EA),
+            ),
+          ),
+          SizedBox(
+            height: 39,
+          ),
         ],
       ),
     );
